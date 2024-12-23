@@ -1,0 +1,17 @@
+﻿@model EmployeeInfoApprovalSystem.Models.Employee
+
+<h1>Add Employee</h1>
+<form asp-action="AddEmployee" method="post">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="Name" required />
+    <br />
+    <label for="Position">Position:</label>
+    <input type="text" id="Position" name="Position" required />
+    <br />
+    <label for="DepartmentId">Department:</label>
+    <select id="DepartmentId" name="DepartmentId">
+        <!-- Populate with department options -->
+    </select>
+    <br />
+    <button type="submit">Submit</button>
+</form>
